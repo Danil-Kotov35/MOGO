@@ -1,0 +1,511 @@
+@media screen and (max-width: 600px){
+	/* ========================SECTION HEADER======================== */
+	.nav__logo{
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.nav__inner{
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		display: none;
+		flex-direction: column;
+	}
+
+	.nav__inner a{
+		font-size: 15px;
+	}
+
+	.header__suptitle{
+		
+		font-size: 38px;
+	}
+	.navigation{
+		width: 85%;
+		
+		z-index: 5;
+		padding-right: 10%;
+		padding-left:7% ;
+		padding-top: 10px;
+		left: 0px;
+	}
+
+	.navigation_fixed{
+		position: fixed;
+		background-color:#FF8484 ;
+	}
+
+	.header__title{
+		font-size: 50px;
+		text-align: center;
+		line-height: 75px;
+		padding-top: 0px;
+	}
+
+
+	/* ========================SECTION ABOUT======================== */
+	.about-img{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	/* ========================SECTION STATISTIC======================== */
+	.statistics__item{
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows:1fr 1fr 1fr ;	
+	}
+
+	/* ========================SECTION SERVICES======================== */
+	.services-row{
+		flex-direction: column;
+		text-align: center;
+	}
+	.services__item{
+		display: block;
+		margin-left: 0px;
+	}
+	
+	.services__item:first-child{
+		margin-left: 0px;
+	}
+
+	.services__text{
+		max-width: 245px;
+		margin: 0 auto;
+	}
+
+	.services__icn{
+		margin-bottom: 20px;
+	}
+
+	.services__hr{
+		display: none;
+	}
+	/* ========================SECTION PRODUCT======================== */
+	.product__inner{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.product__tab{
+		padding: 6px;
+	}
+	.product__name{
+		font-size: 12px;
+	}
+	.product__icn{
+		width: 12%;
+		height: auto;
+	}
+
+	/* ========================SECTION LOGO======================== */
+
+	.logo__inner{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.logo__inner img{
+		padding:20px 0; 
+	}
+
+	
+
+	/* ========================SECTION COLLAGE======================== */
+	.collage__icn{
+		top:24%;
+		left:40%;
+		width: 24px;
+		height: auto;
+	}
+	.collage__suptitle{
+		font-size: 12px;
+		margin-top: 5px;
+
+	}
+
+	.collage__text{
+		display:none;
+	}
+
+	/* ========================SECTION HAPPYCLIENT======================== */
+	.happyclient__inner{
+		grid-template-columns: 1fr;
+	}
+	
+	/* ========================SECTION OURSTORIES======================== */
+
+	.ourstories__inner{
+		grid-template-columns: 1fr;
+	}
+
+	.ourstories__item{
+		margin-bottom: 40px;
+	}
+	.ourstories__suptitle{
+		text-align: center;
+	}
+
+	.ourstories__text{
+		text-align: center;
+	}
+
+	.ourstories__info{
+		justify-content: center;
+	}
+
+	/* ========================SECTION MOGO======================== */
+	.mogo__inner{
+		grid-template-columns: 1fr;
+	}
+
+	.mogo__title, .mogo__text,.mogo__followers{
+		text-align: center;
+	}
+
+	.mogo__input button{
+		width: 100px;
+	}
+
+	.mogo__input input{
+		max-width: 150px;
+	}
+
+	.mogo__heading{
+		text-align: center;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	.mogo__collage{
+		margin: 20px auto;
+	}
+
+	.mogo__more{
+		text-align: center;
+	}
+
+	.mogo__social svg{
+		width: 15px;
+		height: 15px;
+	}
+
+	
+	
+	/* ========================HAMBURGER-MENU======================== */
+	.hamburger-menu{
+		position: relative;
+		display: flex;
+		justify-content: end;
+	}
+	
+	.menu__button{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		width: 26px;
+		height: 26px;
+		cursor: pointer;
+		z-index: 1;
+		top: -10px;
+		
+	
+	}
+		
+	.menu__button > span,
+	.menu__button > span::before,
+	.menu__button > span::after{
+		display: block;
+		position: absolute;
+		background-color: #616161;
+		
+		width: 100%;
+		height: 2px;
+		
+		transition-duration: .25s;
+	}
+	
+	.menu__button > span::before{
+		content: "";
+		top: -8px;
+	
+	}
+	
+	.menu__button > span::after{
+		content: "";
+		top: 8px;
+	
+	}
+
+	.nav__inner {
+		transition-duration: .25s;
+	  }
+
+	.nav__item{
+		transition-duration: .25s;
+	}
+	
+	#menu__toggle:checked ~ .menu__button > span {
+		transform: rotate(45deg);
+		margin-top: 27px;
+	  }
+	#menu__toggle:checked ~ .menu__button > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__button > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .nav__inner {
+		display: flex;
+		left: 0;
+		transition-duration: .25s;
+	}
+
+	
+
+}
+
+
+@media (min-width:600px) and (max-width:768px){
+/* ========================SECTION HEADER======================== */
+
+	.nav__inner{
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		display: none;
+		flex-direction: column;
+	}
+
+	.header__suptitle{
+
+		font-size: 40px;
+	}
+	
+	.header__title{
+		font-size: 90px;
+		text-align: center;
+		line-height: 85px;
+	}
+
+/* ========================SECTION ABOUT======================== */
+	.about-img{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about__users{
+		top: 35%;
+	}
+
+/* ========================SECTION STATISTICS======================== */
+	.statistics__number{
+		font-size: 65px;
+	}
+
+	.statistics__name{
+		font-size: 12px;
+	}
+
+/* ========================SECTION SERVICES======================== */
+	.services__item{
+		display: block;
+	}
+
+	.services-row{
+		text-align: center;
+	}
+
+	.services__icn{
+		margin-bottom: 20px;
+	}
+
+/* ========================SECTION WHOWE======================== */
+
+	.whowe__background svg{
+		width: 15px;
+		height: 15px;
+	}
+/* ========================SECTION HAPPYCLIENT======================== */
+
+	.happyclient__item{
+		grid-template-columns: 1fr;
+	}
+
+	.happyclient__item img{
+		margin: 0 auto;
+	}
+
+	.happyclient__info{
+		margin: 0;
+		text-align: center;
+	}
+	.happyclient__info hr{
+		margin: 0 auto;
+		float: none;
+	}
+
+/* ========================SECTION OURSTORIES======================== */
+	 
+	.ourstories__num{
+		font-size: 17px;
+	}
+	.ourstories__mon{
+		font-size: 14px;
+		padding-bottom: 7px;
+	} 
+
+/* ========================SECTION MOGO======================== */
+
+	.mogo__title, .mogo__text,.mogo__followers{
+		text-align: center;
+	}
+	.mogo__inner{
+		grid-template-columns:1fr;
+		grid-template-rows:1fr ;
+	}
+	.mogo_grid1{
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.mogo_grid2{
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	.mogo_grid3{
+		grid-area: 2 / 2 / 3 / 3;
+	}
+/* ========================HAMBURGER-MENU======================== */
+	.hamburger-menu{
+		position: relative;
+		display: flex;
+		justify-content: end;
+	}
+	
+	.menu__button{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		width: 26px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 1;
+		top: -10px;
+		
+	
+	}
+	
+
+	#menu__toggle{
+		opacity: 0;
+	}
+	
+	.menu__button > span,
+	.menu__button > span::before,
+	.menu__button > span::after{
+		display: block;
+		position: absolute;
+		background-color: #616161;
+		width: 100%;
+		height: 2px;
+		transition-duration: .25s;
+	}
+	
+	.menu__button > span::before{
+		content: "";
+		top: -8px;
+	
+	}
+	
+	.menu__button > span::after{
+		content: "";
+		top: 8px;
+	
+	}
+	
+	#menu__toggle:checked ~ .menu__button > span {
+		transform: rotate(45deg);
+		margin-top: 20px;
+	  }
+	#menu__toggle:checked ~ .menu__button > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__button > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .nav__inner {
+		display: flex;
+		left: 0;
+		transition-duration: .25s;
+	}
+
+}
+
+@media (min-width:768px) and (max-width:1100px){
+
+/* ========================SECTION NAVIGATION======================== */
+	.nav__inner a{
+		margin-left: 40px;
+	}
+
+	.header__suptitle{
+		font-size: 60px;
+	}
+
+	.header__title{
+		font-size: 130px;
+		text-align: center;
+	}
+
+/* ========================SECTION HAPPYCLIENT======================== */
+	.happyclient__item{
+		grid-template-columns: 1fr;
+	}
+
+	.happyclient__item img{
+		margin: 0 auto;
+	}
+
+	.happyclient__info{
+		margin: 0;
+		text-align: center;
+	}
+	.happyclient__info hr{
+		margin: 0 auto;
+		float: none;
+	}
+
+/* ========================SECTION OURSTORIES======================== */
+	.ourstories__num{
+		font-size: 20px;
+	}
+	.ourstories__mon{
+		font-size: 17px;
+	} 
+	
+/* ========================SECTION MOGO======================== */
+	.mogo__title, .mogo__text,.mogo__followers{
+		text-align: center;
+	}
+	.mogo__inner{
+		grid-template-columns:1fr;
+		grid-template-rows:1fr ;
+	}
+	.mogo_grid1{
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.mogo_grid2{
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	.mogo_grid3{
+		grid-area: 2 / 2 / 3 / 3;
+	}
+
+
+}
